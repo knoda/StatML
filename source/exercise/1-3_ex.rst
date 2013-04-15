@@ -7,13 +7,13 @@
 
 **1次元バージョン**
 
-:download:`ex_mle_1d.py <./py/03/ex_mle_1d.py>`_
+:download:`ex_mle_1d.py <./py/03/ex_mle_1d.py>`
 
 .. literalinclude:: py/03/ex_mle_1d.py
 
 **2次元バージョン**
 
-:download:`ex_mle_2d.py <./py/03/ex_mle_2d.py>`_
+:download:`ex_mle_2d.py <./py/03/ex_mle_2d.py>`
 
 .. literalinclude:: py/03/ex_mle_2d.py
 

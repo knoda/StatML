@@ -68,7 +68,7 @@ PythonをMATLABやOctaveのような数値計算ソフトとして使いこな�
 
 .. literalinclude:: py/02/ex_file_io.py
 
-2次元正規分布の作図 (演習2.2)
+2次元正規分布の描画 (演習2.2)
 =============================
 
 :download:`ex_gaussian_2d.py <./py/02/ex_gaussian_2d.py>`
