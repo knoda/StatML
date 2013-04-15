@@ -1,0 +1,26 @@
+===========================
+混合ガウスモデルの最尤推定2
+===========================
+
+EMアルゴリズムによる確率密度推定 (演習8.3)
+==========================================
+
+**1次元バージョン**
+
+:download:`ex_em_algorithm_1d.py <./py/06/ex_em_algorithm_1d.py>`
+
+.. literalinclude:: py/06/ex_em_algorithm_1d.py
+
+**2次元バージョン**
+
+:download:`ex_em_algorithm_2d.py <./py/06/ex_em_algorithm_2d.py>`
+
+.. literalinclude:: py/06/ex_em_algorithm_2d.py
+
+:download:`faithful.txt <./py/data/faithful.txt>`
+
+宿題
+====
+
+
+

@@ -1,0 +1,41 @@
+================================
+線形判別分析による手書き文字認識
+================================
+
+最尤推定法の実装 (演習4.3)
+==========================
+
+**1次元バージョン**
+
+:download:`ex_mle_1d.py <./py/03/ex_mle_1d.py>`_
+
+.. literalinclude:: py/03/ex_mle_1d.py
+
+**2次元バージョン**
+
+:download:`ex_mle_2d.py <./py/03/ex_mle_2d.py>`_
+
+.. literalinclude:: py/03/ex_mle_2d.py
+
+線形判別分析の実装 (演習6.1)
+============================
+
+**2次元ガウス分布の線形判別**
+
+:download:`ex_lda_2d.py <./py/03/ex_lda_2d.py>`
+
+.. literalinclude:: py/03/ex_lda_2d.py
+
+**手書き文字認識**
+
+:download:`ex_lda_digits.py <./py/03/ex_lda_digits.py>`
+
+.. literalinclude:: py/03/ex_lda_digits.py
+
+多カテゴリ文字認識 (演習6.2)
+============================
+
+宿題
+====
+
+
