@@ -4,11 +4,14 @@ import numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 
+def quad(x,A):
+    return np.array(np.matrix(x).T*np.matrix(A)*np.matrix(x))
+
 def gaussian(x, mu, Sigma):
     """多変量ガウス関数"""
     tmp1 = 1 / ((2*np.pi) ** (x.size/2.0))
     tmp2 = 1 / (np.linalg.det(Sigma) ** 0.5)
-    tmp3 = - 0.5 * np.dot(np.dot(x-mu, np.linalg.inv(Sigma)), x-mu)
+    tmp3 = - 0.5 * quad(x-mu,np.linalg.inv(Sigma))
     return tmp1 * tmp2 * np.exp(tmp3)
 
 def draw(ax, mu, Sigma):
@@ -22,7 +25,7 @@ def draw(ax, mu, Sigma):
     z = np.zeros((50,50))
     for i in range(len(ylist)):
         for j in range(len(xlist)):
-            xx = np.array([xlist[j], ylist[i]])
+            xx = np.array([[xlist[j]], [ylist[i]]])
             z[i,j] = gaussian(xx, mu, Sigma)
     cs = ax.pcolor(x, y, z)
     plt.colorbar(cs)
@@ -51,8 +54,8 @@ if __name__ == "__main__":
     ax = plt.figure().add_subplot(1,1,1)
 
     # 平均、分散を初期化
-    #mu = np.array([0, 1])
-    mu = 6*np.random.rand(2)-3
+    #mu = np.array([[0], [1]])
+    mu = 6*np.random.rand(2,1)-3
 
     #Sigma = np.array([[5, 0], [0, 1]]);
     Sigma = np.array([[5, 1], [1, 0.5]]);

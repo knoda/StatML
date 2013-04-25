@@ -35,6 +35,10 @@
 多カテゴリ文字認識 (演習6.2)
 ============================
 
+:download:`ex_lda_digits_multi.py <./py/03/ex_lda_digits_multi.py>`
+
+.. literalinclude:: py/03/ex_lda_digits_multi.py
+
 宿題
 ====
 
